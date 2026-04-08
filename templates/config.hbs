@@ -1,10 +1,4 @@
-{{!--
-
-This is using an HTML template processor called Handlebars
-https://handlebarsjs.com/guide/
-
---}}
-<form id="swd6-config">
+<div id="swd6-config">
 	<p>{{localize 'starwarsd6.form.desc'}}</p>
 
 	<section>
@@ -15,7 +9,7 @@ https://handlebarsjs.com/guide/
 	</section>
 
 	<footer>
-		<button class="cancel"><i class="fas fa-times"></i>{{localize 'starwarsd6.form.cancel'}}</button>
-		<button class="submit"><i class="fas fa-save"></i>{{localize 'starwarsd6.form.submit'}}</button>
+		<button type="button" data-action="cancel"><i class="fas fa-times"></i>{{localize 'starwarsd6.form.cancel'}}</button>
+		<button type="submit"><i class="fas fa-save"></i>{{localize 'starwarsd6.form.submit'}}</button>
 	</footer>
-</form>
+</div>
