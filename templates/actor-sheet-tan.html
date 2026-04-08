@@ -1,6 +1,7 @@
-<div class="background-image">
+<form class="{{cssClass}} flexcol background-image" autocomplete="off">
+    {{!-- Sheet Header --}}
     <header class="sheet-header flex-group-left">
-        <div>
+        <div class="header-fields">
             <div class="flexrow">
                 <img class="sw-logo" src="modules/starwarsd6-essentialcompanion-od6s/templates/logo.webp" width="150">
                 <h1 class="charname">
@@ -14,4 +15,4 @@
              alt="{{localize 'OD6S.ALT_ACTOR_IMAGE'}}"/>
     </header>
     {{> (getBodyTemplate actor.type)}}
-</div>
+</form>
