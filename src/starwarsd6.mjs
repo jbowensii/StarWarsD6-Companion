@@ -1,3 +1,4 @@
+import { ActorSheetStarWars, ActorSheetStarW1e } from './actor-sheets-star-wars.js';
 
 const MOD_NAME = 'starwarsd6-essentialcompanion-od6s';
 const MENU_NAME = 'ConfigureOpenD6Options';
@@ -23,6 +24,25 @@ Hooks.on('init', () => {
 		type: Object,
 		default: {}
 	});
+
+	// Register Star Wars themed actor sheets
+	Actors.registerSheet(MOD_NAME, ActorSheetStarWars, {
+		label: 'starwarsd6.sheet.2e',
+		types: ['character', 'npc'],
+		makeDefault: false
+	});
+
+	Actors.registerSheet(MOD_NAME, ActorSheetStarW1e, {
+		label: 'starwarsd6.sheet.1e',
+		types: ['character', 'npc'],
+		makeDefault: false
+	});
+
+	// Preload Google Fonts for Star Wars sheets
+	const link = document.createElement('link');
+	link.rel = 'stylesheet';
+	link.href = 'https://fonts.googleapis.com/css2?family=Poller+One&family=Oswald:wght@400;700&display=swap';
+	document.head.appendChild(link);
 });
 
 

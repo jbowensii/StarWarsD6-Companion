@@ -1,0 +1,1070 @@
+/* Note to future self or others:
+	.star-wars-2e, .star-wars-1e targets both edition sheets
+	.star-wars-2e targets the second edition tan sheet
+	.star-wars-1e targets the first edition white sheet
+	.application.od6s targets rollboxes and pop up boxes
+*/
+
+
+.star-wars-2e .background-image {
+  background-image: linear-gradient(#f6e09a, white);
+  border: solid black 2px;
+}
+
+.star-wars-1e .background-image {
+  background: white;
+  border: solid black 2px;
+  border-radius: 12px;
+}
+
+/*this adds the blue-to-white vertical gradient behind the tan background image gradient*/
+.star-wars-2e .window-content {
+background-image: linear-gradient(white,#92aaea);
+padding: 12px;
+}
+/*1E background*/
+.star-wars-1e .window-content {
+background: white;
+padding: 12px;
+}
+
+/* remove border and add underline to header inputs*/
+.star-wars-2e header.sheet-header input[type="text"],
+.star-wars-1e header.sheet-header input[type="text"],
+.star-wars-2e header.sheet-header input[type="number"],
+.star-wars-1e header.sheet-header input[type="number"] {
+border: 0px;
+border-radius: 0;
+border-bottom: 2px solid black;
+  background: rgba(0, 0, 0, 0.00);
+}
+
+.star-wars-2e header.sheet-header input[type="text"]:hover,
+.star-wars-1e header.sheet-header input[type="text"]:hover,
+.star-wars-2e header.sheet-header input[type="number"]:hover,
+.star-wars-1e header.sheet-header input[type="number"]:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.star-wars-2e .sheet-header,
+.star-wars-1e .sheet-header {
+border: 0px solid var(--color-border-light-tertiary);
+}
+
+.star-wars-2e nav.sheet-tabs.tabs {
+    border: none;
+    border-top: 5px dotted maroon;
+}
+
+.star-wars-1e nav.sheet-tabs.tabs {
+    border: none;
+    border-top: 2px solid black;
+}
+
+/* Barlow Condensed and Domine Fonts are open-source google fonts. The actual fonts used in the Star Wars 2nd Edition Revised and Expanded rulebook were ITC Cheltenham Std Book and ITC Serif Gothic Std Heavy but these are close spiritual substitutes. Also they're free.*/
+
+.star-wars-2e nav.sheet-tabs.tabs a.item,
+.star-wars-1e nav.sheet-tabs.tabs a.item {
+  padding: 0px 12px;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  line-height: 40px;
+  font-weight: 500;
+  font-size: 21px;
+  font-family: barlow condensed;
+}
+
+/*This changes the color of the mouse hover shadow from red to grey, but only on sheets styled by star wars actor sheets*/
+.star-wars-2e a:hover, .star-wars-1e a:hover,
+.star-wars-2e .rolldialog:hover, .star-wars-1e .rolldialog:hover,
+.star-wars-2e .rolldialog:focus, .star-wars-1e .rolldialog:focus,
+.star-wars-2e .actionroll:hover, .star-wars-1e .actionroll:hover,
+.star-wars-2e .actionroll:focus, .star-wars-1e .actionroll:focus,
+.star-wars-2e .advancedialog:hover, .star-wars-1e .advancedialog:hover,
+.star-wars-2e .advancedialog:focus, .star-wars-1e .advancedialog:focus,
+.star-wars-2e .advanceup:hover, .star-wars-1e .advanceup:hover,
+.star-wars-2e .advanceup:focus, .star-wars-1e .advanceup:focus,
+.star-wars-2e .advancedown:hover, .star-wars-1e .advancedown:hover,
+.star-wars-2e .advancedown:focus, .star-wars-1e .advancedown:focus,
+.star-wars-2e .cpup:hover, .star-wars-1e .cpup:hover,
+.star-wars-2e .cpup:focus, .star-wars-1e .cpup:focus,
+.star-wars-2e .cpdown:hover, .star-wars-1e .cpdown:hover,
+.star-wars-2e .cpdown:focus, .star-wars-1e .cpdown:focus,
+.star-wars-2e .modifiers-button:hover, .star-wars-1e .modifiers-button:hover,
+.star-wars-2e .modifiers-button:focus, .star-wars-1e .modifiers-button:focus,
+.star-wars-2e .combat-action:hover, .star-wars-1e .combat-action:hover,
+.star-wars-2e .combat-action:focus, .star-wars-1e .combat-action:focus,
+.star-wars-2e .vehicle-action:hover, .star-wars-1e .vehicle-action:hover,
+.star-wars-2e .vehicle-action:focus, .star-wars-1e .vehicle-action:focus,
+.star-wars-2e .edit-difficulty:hover, .star-wars-1e .edit-difficulty:hover,
+.star-wars-2e .edit-difficulty:focus, .star-wars-1e .edit-difficulty:focus,
+.star-wars-2e .edit-damage:hover, .star-wars-1e .edit-damage:hover,
+.star-wars-2e .edit-damage:focus, .star-wars-1e .edit-damage:focus,
+.star-wars-2e .edit-effect:hover, .star-wars-1e .edit-effect:hover,
+.star-wars-2e .edit-effect:focus, .star-wars-1e .edit-effect:focus,
+.star-wars-2e .show-item-details:hover, .star-wars-1e .show-item-details:hover,
+.star-wars-2e .show-item-details:focus, .star-wars-1e .show-item-details:focus,
+.star-wars-2e .choose-target:hover, .star-wars-1e .choose-target:hover,
+.star-wars-2e .choose-target:focus, .star-wars-1e .choose-target:focus,
+.star-wars-2e .crew-member:hover, .star-wars-1e .crew-member:hover,
+.star-wars-2e .crew-member:focus, .star-wars-1e .crew-member:focus {
+  text-shadow: 0 0 8px #7c7356;
+  }
+
+.star-wars-2e select:focus,
+.star-wars-1e select:focus {
+  box-shadow: 0 0 5px #7c7356;
+}
+
+/*this adds a shadow when you focus or over on a fillable text box*/
+.star-wars-2e input[type="text"]:focus, .star-wars-1e input[type="text"]:focus,
+.star-wars-2e input[type="number"]:focus, .star-wars-1e input[type="number"]:focus,
+.star-wars-2e input[type="password"]:focus, .star-wars-1e input[type="password"]:focus,
+.star-wars-2e input[type="date"]:focus, .star-wars-1e input[type="date"]:focus,
+.star-wars-2e input[type="time"]:focus, .star-wars-1e input[type="time"]:focus,
+.star-wars-2e input[type="search"]:focus, .star-wars-1e input[type="search"]:focus,
+.star-wars-2e input[type="text"]:hover, .star-wars-1e input[type="text"]:hover,
+.star-wars-2e input[type="number"]:hover, .star-wars-1e input[type="number"]:hover {
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/*This makes the body text for form fields set to Domine*/
+.star-wars-2e input[type="text"], .star-wars-1e input[type="text"],
+.star-wars-2e input[type="number"], .star-wars-1e input[type="number"],
+.star-wars-2e input[type="password"], .star-wars-1e input[type="password"],
+.star-wars-2e input[type="date"], .star-wars-1e input[type="date"],
+.star-wars-2e input[type="time"], .star-wars-1e input[type="time"],
+.star-wars-2e input[type="search"], .star-wars-1e input[type="search"] {
+font-family:Domine;
+font-size: 17px;
+}
+
+/* Character Name Styling*/
+.star-wars-2e .sheet-header h1 input,
+.star-wars-1e .sheet-header h1 input {
+font-weight: 600;
+font-size: 28px;
+padding-left: 3%;
+border: 0px;
+border-radius: 0;
+border-bottom: 2px solid black;
+  background: rgba(0, 0, 0, 0.00);
+}
+
+.star-wars-2e label,
+.star-wars-1e label {
+font-family: barlow condensed;
+font-size: 18px;
+  font-weight: 600;
+}
+
+.star-wars-2e nav.sheet-tabs.tabs a.item.active {
+color: maroon;
+text-decoration: none;
+  margin: 0px;
+  text-shadow: none;
+  border-bottom: 5px dotted maroon;
+}
+
+.star-wars-1e nav.sheet-tabs.tabs a.item.active {
+color: black;
+text-decoration: none;
+  margin: 0px;
+  text-shadow: none;
+  border-bottom: 2px solid black;
+}
+
+/* this adds some padding to the bottom of the sheet, separating the edit button*/
+.star-wars-2e .sheet-body,
+.star-wars-1e .sheet-body {
+  padding-bottom: 20px;
+}
+.star-wars-2e section.sheet-mode,
+.star-wars-1e section.sheet-mode {
+padding: 2px;
+margin: 16px;
+}
+
+/* this is styling the underlines and the spacing of the attributes and skills*/
+.star-wars-2e  div.flexrow.flex-group-left.show-item-details,
+.star-wars-1e  div.flexrow.flex-group-left.show-item-details,
+.star-wars-2e  div.edit-quantity,
+.star-wars-1e  div.edit-quantity {
+margin-left: 7px;
+}
+
+.star-wars-2e  div.tab.inventory input[type="checkbox"],
+.star-wars-1e  div.tab.inventory input[type="checkbox"] {
+margin: 2px;
+}
+
+.star-wars-2e .sheet-header .flex-group-left,
+.star-wars-1e .sheet-header .flex-group-left,
+.star-wars-2e .sheet-header .flex-group-center,
+.star-wars-1e .sheet-header .flex-group-center,
+.star-wars-2e .sheet-mode .flex-group-left,
+.star-wars-1e .sheet-mode .flex-group-left {
+border: 0px;
+}
+
+.star-wars-2e .flex-group-center,
+.star-wars-1e .flex-group-center,
+.star-wars-2e .flex-group-left,
+.star-wars-1e .flex-group-left,
+.star-wars-2e .flex-group-right,
+.star-wars-1e .flex-group-right {
+border: 0px;
+}
+
+.star-wars-2e li.attributes > div.attributes.grid-2col-attributes,
+.star-wars-1e li.attributes > div.attributes.grid-2col-attributes,
+.star-wars-2e div.attributes.grid-3col-attributes,
+.star-wars-1e div.attributes.grid-3col-attributes,
+.star-wars-2e div.attributes.grid-2col-attributes,
+.star-wars-1e div.attributes.grid-2col-attributes {
+  font-family: 'Barlow Condensed';
+  font-size: 25px;
+  font-weight: bold;
+}
+.star-wars-2e div.attributes.grid-2col-attributes:after,
+.star-wars-1e div.attributes.grid-2col-attributes:after{
+  content: "";
+  background: black;
+  bottom: 5px;
+  left: 33%;
+  height: 2px;
+  width: 89%;
+  position: relative;
+}
+
+.star-wars-2e div.attributes.grid-3col-attributes:after,
+.star-wars-1e div.attributes.grid-3col-attributes:after {
+  content: "";
+  background: black;
+  bottom: 2px;
+  left: 39%;
+  height: 2px;
+  width: 113%;
+  position: relative;
+}
+
+/*skills styling*/
+.star-wars-2e .item.skills.grid-2col-attributes,
+.star-wars-1e .item.skills.grid-2col-attributes {
+padding-left: 25px;
+font-family: domine;
+}
+
+.star-wars-2e .skills.grid.grid-3col-attributes,
+.star-wars-1e .skills.grid.grid-3col-attributes{
+padding: 2px;
+padding-left: 25px;
+font-family: domine;
+}
+
+/*remove boxes on skills when in free edit and advance mode*/
+.star-wars-2e .skills.grid.grid-3col-attributes > .flex-group-center,
+.star-wars-1e .skills.grid.grid-3col-attributes > .flex-group-center,
+.star-wars-2e .skills.grid.grid-3col-attributes > .flex-group-left,
+.star-wars-1e .skills.grid.grid-3col-attributes > .flex-group-left,
+.star-wars-2e .skills.grid.grid-3col-attributes > .flex-group-right,
+.star-wars-1e .skills.grid.grid-3col-attributes > .flex-group-right,
+.star-wars-2e .item.specialization.grid.grid-3col-attributes > .flex-group-center,
+.star-wars-1e .item.specialization.grid.grid-3col-attributes > .flex-group-center,
+.star-wars-2e .item.specialization.grid.grid-3col-attributes > .flex-group-left,
+.star-wars-1e .item.specialization.grid.grid-3col-attributes > .flex-group-left,
+.star-wars-2e .item.specialization.grid.grid-3col-attributes > .flex-group-right,
+.star-wars-1e .item.specialization.grid.grid-3col-attributes > .flex-group-right {
+border: 0px;
+}
+
+.star-wars-2e .item.skills.grid-2col-attributes:after,
+.star-wars-1e .item.skills.grid-2col-attributes:after {
+  content: "";
+  background: #33333338;
+  bottom: 3px;
+  left: 2%;
+  height: 1px;
+  width: 120%;
+  position: relative;
+  }
+
+.star-wars-2e .skills.grid.grid-3col-attributes:after,
+.star-wars-1e .skills.grid.grid-3col-attributes:after {
+  content: "";
+  background: #33333338;
+  bottom: 0px;
+  left: 2%;
+  height: 1px;
+  width: 151%;
+  position: relative;
+  display: inherit;
+  }
+
+
+/*specializations styling 2col*/
+.star-wars-2e .item.specializations > .attributes.grid-2col-attributes,
+.star-wars-1e .item.specializations > .attributes.grid-2col-attributes {
+padding-left: 35px;
+font-family: domine;
+font-size: 14px;
+}
+
+.star-wars-2e .item.specializations > .attributes.grid-2col-attributes:after,
+.star-wars-1e .item.specializations > .attributes.grid-2col-attributes:after {
+content: "";
+  background: #33333338;
+  bottom: 3px;
+  left: 6%;
+  height: 1px;
+  width: 116%;
+  position: relative;
+}
+
+/*specializations styling 3col*/
+.star-wars-2e .item.specialization.grid.grid-3col-attributes,
+.star-wars-1e .item.specialization.grid.grid-3col-attributes {
+padding: 2px;
+padding-left: 35px;
+font-family: domine;
+font-weight: bold;
+}
+
+.star-wars-2e .item.specialization.grid.grid-3col-attributes:after,
+.star-wars-1e .item.specialization.grid.grid-3col-attributes:after {
+content: "";
+  background: #33333338;
+bottom: 0px;
+  left: 6%;
+  height: 1px;
+  width: 148%;
+  position: relative;
+}
+
+.star-wars-2e div.attributedialog.flex-group-center.rolldialog,
+.star-wars-1e div.attributedialog.flex-group-center.rolldialog,
+.star-wars-2e div.attributedialog.flex-group-center,
+.star-wars-1e div.attributedialog.flex-group-center {
+background-color: rgba(0,0,0,0);
+  color: black;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.star-wars-2e div.attributedialog.flex-group-center,
+.star-wars-1e div.attributedialog.flex-group-center,
+.star-wars-2e .rolldialog, .star-wars-1e .rolldialog,
+.skilldialog.flex-group-left.rolldialog,
+.star-wars-2e div.attributes.grid-3col-attributes .flex-group-center,
+.star-wars-1e div.attributes.grid-3col-attributes .flex-group-center {
+  border: 0px solid #999;
+}
+
+/* aligns and styles the text in species, type, credits, fp, cp, dsp, move*/
+.star-wars-2e .grid-2col-species input, .star-wars-1e .grid-2col-species input,
+.star-wars-2e .grid-2col-type input, .star-wars-1e .grid-2col-type input {
+ text-align: left;
+ padding-left: 10%;}
+
+.star-wars-2e	div.grid.grid-4col.header-fields input,
+.star-wars-1e	div.grid.grid-4col.header-fields input {
+text-align: center;
+}
+
+.star-wars-2e .sheet-header .grid-2col-species,
+.star-wars-1e .sheet-header .grid-2col-species,
+.star-wars-2e .grid-2col-type,
+.star-wars-1e .grid-2col-type {
+padding-left: 10px;
+  padding-right: 10px;}
+
+/* this makes the force points field longer to match the other fields */
+.star-wars-2e input[name="system.fatepoints.value"],
+.star-wars-1e input[name="system.fatepoints.value"] {
+  flex-grow: 2;
+  }
+
+/*selects the credits field and makes it span up two grids*/
+.star-wars-2e > section > div > form > header > div > div:nth-child(2) > div.grid.grid-4col.header-fields > div:nth-child(5),
+.star-wars-1e > section > div > form > header > div > div:nth-child(2) > div.grid.grid-4col.header-fields > div:nth-child(5) {
+grid-column: span 2;
+}
+
+/*style color added to advance buttons */
+.star-wars-2e a.advancedialog,
+.star-wars-2e a.specializedialog,
+.star-wars-2e div.advancedialog.flexrow.flex-group-center,
+.star-wars-2e div.item-add > a,
+.star-wars-2e div.attribute-edit > a,
+.star-wars-2e a.item-control.item-edit,
+.star-wars-2e a.item-control.item-delete {
+color: maroon;}
+
+.star-wars-2e button.reset-species-template,
+.star-wars-1e button.reset-species-template {
+ color: white;
+  font-family: 'Barlow Condensed';
+  font-size: 18px;
+  }
+
+/* Style Wounds */
+#actor\.system\.wounds\.value {
+font-size: 14px;
+  font-family: domine;
+  text-align: center;
+}
+.star-wars-2e #actor\.system\.wounds\.value:focus,
+.star-wars-1e #actor\.system\.wounds\.value:focus {
+  box-shadow: none;
+}
+
+/*div[id^="ActorSheetStarWars"] > section > div > form > header > div > div:nth-child(2) > div.grid.grid-4col.header-fields > div.flexrow.flex-group-left > label {}*/
+
+.sw-logo {
+flex: 0 0 150px;
+height: 75px;
+margin-right: 10px;
+border: 0px;
+}
+
+.star-wars-2e.od6s .sheet-header .profile-img,
+.star-wars-1e.od6s .sheet-header .profile-img {
+margin-right: 3px;
+}
+
+.profile-img {
+margin-left: 10px;
+border: 0px;
+}
+
+.star-wars-1e .profile-img {
+border-radius: 12px;
+}
+
+/*.                                                                    */
+/* Style Changes to Rollbox and dialog boxes to match style and fonts */
+/*                                                                   */
+
+
+/*header large font*/
+.application.od6s > section > div.dialog-content > form > div > p > b {
+font-family: barlow Condensed;
+  font-weight: 700;
+  font-size: 22px;
+  }
+/*remove borders*/
+.application.od6s .flex-group-center,
+.application.od6s .flex-group-left {
+border: 0px;
+}
+
+/*add underlines to each bottom line except for section headings*/
+.application.od6s > section > div.dialog-content > form > div > div:not(.center) {
+  border-bottom: 1px solid #33333338;
+  margin-bottom: 2px;
+  font-family: barlow condensed;
+  font-size: 18px;
+}
+
+/*style center headings stronger*/
+.application.od6s > section > div.dialog-content > form > div > div.center {
+    font-family: barlow condensed;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+.application.od6s input[type="text"],
+.application.od6s select {
+font-family: Domine;
+  font-size: 14px;
+}
+.application.od6s input[type="number"],
+.application.od6s div.boxed {
+font-weight:700;
+color: black;
+}
+
+.application.od6s > section > div.dialog-content > form > div > div.flexrow.flex-group-left.usecharacterpoints > div:nth-child(1) {
+flex: 1;
+}
+
+.application.od6s > section > div.dialog-content > form > div > div.flexrow.flex-group-left.usecharacterpoints > div.flexrow.flex-group-center {
+flex: .2;
+}
+
+.application.od6s input[type="number"]::placeholder {
+  color: black;
+}
+.application.od6s .row .flex-group-center input[type="number"] {
+  text-align: right;
+  border: 0px;
+  background: none;
+  border-radius: 0px;
+}
+.application.od6s .row .flex-group-center input[type="number"]:hover {
+background: rgba(0, 0, 0, 0.05);
+}
+
+.application.od6s .row .flex-group-center b {
+  text-align: left;
+}
+
+.application.od6s .column {
+padding: 0px;
+}
+
+.application.od6s .flexrow.flex-group-left .bonusdice label {
+flex: 0.5;
+}
+
+.application.od6s .flexrow.flex-group-left .bonusdice input[type="number"] {
+max-width: 35px;
+text-align: center;
+border: 0px;
+background: none;
+border-radius: 0px;
+}
+.application.od6s .flexrow.flex-group-left .bonusdice input[type="number"]:hover {
+background: rgba(0, 0, 0, 0.07);
+}
+
+
+
+.application.od6s .flexrow.flex-group-left .bonuspips label {
+flex: 0.5;
+}
+
+.application.od6s .flexrow.flex-group-left .bonuspips input[type="number"] {
+max-width: 35px;
+text-align: center;
+border: 0px;
+background: none;
+border-radius: 0px;
+}
+
+.application.od6s .flexrow.flex-group-left .bonuspips input[type="number"]:hover {
+background: rgba(0, 0, 0, 0.05);
+}
+
+.application.od6s #miscmod {
+max-width: 35px;
+text-align: center;
+border: 0px;
+background: none;
+border-radius: 0px;}
+
+.application.od6s .flexrow.flex-group-left.miscmod.modifier > label {
+flex: .5;
+}
+
+.application.od6s #miscmod:hover {
+background: rgba(0, 0, 0, 0.05);
+}
+
+.application.od6s > section > div.dialog-buttons > button[data-button="submit"] {
+font-family: barlow Condensed;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.application.od6s .cpup,
+.application.od6s .cpdown {
+color: black;}
+
+
+
+/*.                                                                    */
+/* Back to styling the additional tabs on the character sheet.        */
+/*                                                                   */
+
+.star-wars-2e .grid.title-add-grid .flexrow.flex-group-center b,
+.star-wars-1e .grid.title-add-grid .flexrow.flex-group-center b {
+font-family: barlow condensed;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: left;
+  padding-left: 1%;
+}
+.star-wars-2e .grid.title-add-grid .flexrow.flex-group-center b:after,
+.star-wars-1e .grid.title-add-grid .flexrow.flex-group-center b:after {
+ content: "";
+  background: black;
+  bottom: -1px;
+  left: 15%;
+  display: block;
+  height: 2px;
+  width: 100%;
+  position: relative;
+}
+
+.star-wars-2e .grid.title-add-grid .flexrow.flex-group-center,
+.star-wars-1e .grid.title-add-grid .flexrow.flex-group-center {
+border: 0px;
+}
+
+/* controls armor/weapons/gear padding and alignment*/
+.star-wars-2e .armor-list, .star-wars-1e .armor-list,
+.star-wars-2e .weapons-list, .star-wars-1e .weapons-list,
+.star-wars-2e .gear-list, .star-wars-1e .gear-list {
+padding-left: 3%;
+}
+
+.star-wars-2e .inv-grid.armor-grid > div.flexrow.flex-group-left.show-item-details,
+.star-wars-1e .inv-grid.armor-grid > div.flexrow.flex-group-left.show-item-details,
+.star-wars-2e .weapons.item  > .inv-grid > div.flexrow.flex-group-left.show-item-details,
+.star-wars-1e .weapons.item  > .inv-grid > div.flexrow.flex-group-left.show-item-details {
+margin-left: 13px;
+}
+
+/*style armor/weapons/gear lists*/
+.star-wars-2e .armors.item,
+.star-wars-1e .armors.item {
+font-family: domine;
+}
+
+.star-wars-2e .armors.item .flex-group-left,
+.star-wars-1e .armors.item .flex-group-left,
+.star-wars-2e .armors.item .flex-group-center,
+.star-wars-1e .armors.item .flex-group-center {
+border: 0px;
+}
+
+.star-wars-2e .armor-list .armors.item:after,
+.star-wars-1e .armor-list .armors.item:after {
+  content: "";
+  background: #33333338;
+  bottom: 5px;
+  left: 2%;
+  display: block;
+  height: 1px;
+  width: 95%;
+  position: relative;
+  }
+
+.star-wars-2e .flexrow.flex-group-center.item-controls > .item-add > .fas.fa-plus {
+font-size: 22px;
+color: maroon;
+}
+
+.star-wars-1e .flexrow.flex-group-center.item-controls > .item-add > .fas.fa-plus {
+font-size: 22px;
+color: black;
+}
+
+.star-wars-2e span[title="Physical Resistance"], .star-wars-1e span[title="Physical Resistance"],
+.star-wars-2e span[title="Energy Resistance"], .star-wars-1e span[title="Energy Resistance"] {
+font-weight: bold;
+}
+.star-wars-2e .weapons.item,
+.star-wars-1e .weapons.item {
+font-family: domine;
+}
+
+.star-wars-2e .weapons.item > .inv-grid .flex-group-left,
+.star-wars-1e .weapons.item > .inv-grid .flex-group-left,
+.star-wars-2e .weapons.item > .inv-grid .flex-group-center,
+.star-wars-1e .weapons.item > .inv-grid .flex-group-center {
+border: 0px;
+}
+
+.star-wars-2e .weapons-list .weapons.item:after,
+.star-wars-1e .weapons-list .weapons.item:after {
+  content: "";
+  background: #33333338;
+  bottom: 5px;
+  left: 2%;
+  display: block;
+  height: 1px;
+  width: 95%;
+  position: relative;
+  }
+
+.star-wars-2e .gears.item,
+.star-wars-1e .gears.item {
+font-family: domine;
+}
+
+.star-wars-2e .gears.item > .inv-grid .flex-group-left,
+.star-wars-1e .gears.item > .inv-grid .flex-group-left,
+.star-wars-2e .gears.item > .inv-grid .flex-group-center,
+.star-wars-1e .gears.item > .inv-grid .flex-group-center {
+border: 0px;
+}
+
+.star-wars-2e .gear-list .gears.item:after,
+.star-wars-1e .gear-list .gears.item:after {
+  content: "";
+  background: #33333338;
+  bottom: 5px;
+  left: 2%;
+  display: block;
+  height: 1px;
+  width: 95%;
+  position: relative;
+  }
+
+.star-wars-2e input[type="number"][name="gear.system.quantity"],
+.star-wars-1e input[type="number"][name="gear.system.quantity"] {
+  height: 20px;
+  width: 3.2ch;
+  border: none;
+  text-align: center;
+  position: relative;
+  bottom: -4px;
+  left: -2px;
+  font-family: domine;
+  font-weight: 700;
+  background: none;
+  font-size: 15px;
+  }
+.star-wars-2e input[type="number"][name="gear.system.quantity"] {
+  color: maroon;
+}
+
+  .star-wars-2e input[type="number"][name="gear.system.quantity"]:hover,
+  .star-wars-1e input[type="number"][name="gear.system.quantity"]:hover {
+background: rgba(0, 0, 0, 0.05);
+}
+
+
+
+/* Better checkboxes? Yes please. */
+
+.star-wars-2e input[type="checkbox"][name="armor.system.equipped.value"],
+.star-wars-2e input[type="checkbox"][name="weapon.system.equipped.value"],
+.star-wars-2e input[type="checkbox"][name="gear.system.equipped.value"],
+.star-wars-2e input[type="checkbox"][name="system.created.value"],
+.star-wars-2e input[type="checkbox"][name="system.metaphysicsextranormal.value"],
+.star-wars-2e input[type="checkbox"][name="wilddie"] {
+appearance: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+width: 22px;
+height: 22px;
+border: 2px solid maroon;
+border-radius: 3px;
+outline: none;
+cursor: pointer;
+}
+
+.star-wars-1e input[type="checkbox"][name="armor.system.equipped.value"],
+.star-wars-1e input[type="checkbox"][name="weapon.system.equipped.value"],
+.star-wars-1e input[type="checkbox"][name="gear.system.equipped.value"],
+.star-wars-1e input[type="checkbox"][name="system.created.value"],
+.star-wars-1e input[type="checkbox"][name="system.metaphysicsextranormal.value"],
+.star-wars-1e input[type="checkbox"][name="wilddie"] {
+appearance: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+width: 22px;
+height: 22px;
+border: 2px solid black;
+border-radius: 3px;
+outline: none;
+cursor: pointer;
+}
+
+.star-wars-2e input[type="checkbox"][name="armor.system.equipped.value"]:checked,
+.star-wars-2e input[type="checkbox"][name="weapon.system.equipped.value"]:checked,
+.star-wars-2e input[type="checkbox"][name="gear.system.equipped.value"]:checked,
+.star-wars-2e input[type="checkbox"][name="system.created.value"]:checked,
+.star-wars-2e input[type="checkbox"][name="system.metaphysicsextranormal.value"]:checked,
+.star-wars-2e input[type="checkbox"][name="wilddie"]:checked {
+background-color: maroon;
+}
+.star-wars-1e input[type="checkbox"][name="armor.system.equipped.value"]:checked,
+.star-wars-1e input[type="checkbox"][name="weapon.system.equipped.value"]:checked,
+.star-wars-1e input[type="checkbox"][name="gear.system.equipped.value"]:checked,
+.star-wars-1e input[type="checkbox"][name="system.created.value"]:checked,
+.star-wars-1e input[type="checkbox"][name="system.metaphysicsextranormal.value"]:checked,
+.star-wars-1e input[type="checkbox"][name="wilddie"]:checked {
+background-color: black;
+}
+
+input[type="checkbox"][name="armor.system.equipped.value"]:checked::after,
+input[type="checkbox"][name="weapon.system.equipped.value"]:checked::after,
+input[type="checkbox"][name="gear.system.equipped.value"]:checked::after,
+input[type="checkbox"][name="system.created.value"]:checked::after,
+input[type="checkbox"][name="system.metaphysicsextranormal.value"]:checked::after,
+input[type="checkbox"][name="wilddie"]:checked::after {
+content: "";
+display: block;
+width: 6px;
+height: 11px;
+border: solid white;
+border-width: 0 3px 3px 0;
+transform: rotate(41deg);
+margin: 0px 0 0 4px;
+}
+
+/* when metaphysics button selected, make the checkbox look black in normal mode*/
+.star-wars-2e input[type="checkbox"][name="system.metaphysicsextranormal.value"]:checked:disabled,
+.star-wars-1e input[type="checkbox"][name="system.metaphysicsextranormal.value"]:checked:disabled {
+background: none;
+border: none;
+cursor: default;
+}
+.star-wars-2e input[type="checkbox"][name="system.metaphysicsextranormal.value"]:disabled::after,
+.star-wars-1e input[type="checkbox"][name="system.metaphysicsextranormal.value"]:disabled::after {
+content: "";
+display: block;
+width: 6px;
+height: 11px;
+border: solid black;
+border-width: 0 3px 3px 0;
+transform: rotate(41deg);
+margin: 4px 0 0 4px;
+}
+
+/*I'm quite proud of this: use the force luke!*/
+/* When the force point button is clicked, make lots of shiny flares and pulses */
+@keyframes glow-pulse-2e {
+0% {
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7),
+              0 0 0 0 rgba(255, 255, 255, 0.5),
+              0 0 0 0 rgba(255, 255, 255, 0.3);
+}
+50% {
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0),
+              0 0 0 15px rgba(255, 255, 255, 0),
+              0 0 0 30px rgba(255, 255, 255, 0);
+}
+100% {
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7),
+              0 0 0 0 rgba(255, 255, 255, 0.5),
+              0 0 0 0 rgba(255, 255, 255, 0.3);
+}
+}
+
+@keyframes sparkle-2e {
+0% {
+  opacity: 1;
+  transform: translate(0, 0) scale(6);
+}
+15% {
+  opacity: 1;
+  transform: translate(-17px, -17px) scale(1);
+}
+19%{
+  opacity: 0;
+  transform: translate(-17px, -17px) scale(1);
+}
+20% {
+  opacity: 1;
+  transform: translate(0, 0) scale(6);
+}
+35% {
+  opacity: 1;
+  transform: translate(15px, 0px) scale(1);
+}
+39% {
+  opacity: 0;
+  transform: translate(15px, 0px) scale(1);
+}
+40% {
+  opacity: 1;
+  transform: translate(0, 0) scale(8);
+}
+55% {
+  opacity: 1;
+  transform: translate(17px, -17px) scale(2);
+}
+59% {
+  opacity: 0;
+  transform: translate(17px, -17px) scale(2);
+}
+60% {
+  opacity: 1;
+  transform: translate(0, 0) scale(5);
+}
+75% {
+  opacity: 1;
+  transform: translate(-15px, 15px) scale(1);
+}
+79% {
+  opacity: 0;
+  transform: translate(-15px, 15px) scale(1);
+}
+80% {
+  opacity: 1;
+  transform: translate(0, 0) scale(6);
+}
+95% {
+  opacity: 1;
+  transform: translate(13px, 13px) scale(3);
+}
+99% {
+  opacity: 0;
+  transform: translate(13px, 13px) scale(3);
+}
+}
+
+@keyframes glow-pulse-1e {
+0% {
+  box-shadow: 0 0 0 0 rgba(0,183,235, 0.7),
+              0 0 0 0 rgba(0,183,235, 0.5),
+              0 0 0 0 rgba(0,183,235, 0.3);
+}
+50% {
+  box-shadow: 0 0 0 10px rgba(0,183,235, 0),
+              0 0 0 15px rgba(0,183,235, 0),
+              0 0 0 30px rgba(0,183,235, 0);
+}
+100% {
+  box-shadow: 0 0 0 0 rgba(0,183,235, 0.7),
+              0 0 0 0 rgba(0,183,235, 0.5),
+              0 0 0 0 rgba(0,183,235, 0.3);
+}
+}
+
+@keyframes sparkle-1e {
+0% {
+  opacity: 1;
+  transform: translate(0, 0) scale(6);
+}
+15% {
+  opacity: 1;
+  transform: translate(-17px, -17px) scale(1);
+}
+19%{
+  opacity: 0;
+  transform: translate(-17px, -17px) scale(1);
+}
+20% {
+  opacity: 1;
+  transform: translate(0, 0) scale(6);
+}
+35% {
+  opacity: 1;
+  transform: translate(15px, 0px) scale(1);
+}
+39% {
+  opacity: 0;
+  transform: translate(15px, 0px) scale(1);
+}
+40% {
+  opacity: 1;
+  transform: translate(0, 0) scale(8);
+}
+55% {
+  opacity: 1;
+  transform: translate(17px, -17px) scale(2);
+}
+59% {
+  opacity: 0;
+  transform: translate(17px, -17px) scale(2);
+}
+60% {
+  opacity: 1;
+  transform: translate(0, 0) scale(5);
+}
+75% {
+  opacity: 1;
+  transform: translate(-15px, 15px) scale(1);
+}
+79% {
+  opacity: 0;
+  transform: translate(-15px, 15px) scale(1);
+}
+80% {
+  opacity: 1;
+  transform: translate(0, 0) scale(6);
+}
+95% {
+  opacity: 1;
+  transform: translate(13px, 13px) scale(3);
+}
+99% {
+  opacity: 0;
+  transform: translate(13px, 13px) scale(3);
+}
+}
+
+.star-wars-2e input[type="checkbox"]#fpInEffect,
+.star-wars-1e input[type="checkbox"]#fpInEffect,
+.star-wars-2e input[type="checkbox"]#fatepoint,
+.star-wars-1e input[type="checkbox"]#fatepoint {
+appearance: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+width: 22px;
+height: 22px;
+border: 2px solid black;
+border-radius: 3px;
+outline: none;
+cursor: pointer;
+position: relative;
+}
+.star-wars-2e input[type="checkbox"]#fpInEffect,
+.star-wars-2e input[type="checkbox"]#fatepoint {
+border: 2px solid maroon;
+}
+
+.star-wars-2e input[type="checkbox"]#fpInEffect:checked,
+.star-wars-2e input[type="checkbox"]#fatepoint:checked {
+background-color: white;
+border: 2px solid white;
+animation: glow-pulse-2e 3s infinite;
+}
+
+.star-wars-1e input[type="checkbox"]#fpInEffect:checked,
+.star-wars-1e input[type="checkbox"]#fatepoint:checked {
+background-color: cyan;
+border: 2px solid cyan;
+animation: glow-pulse-1e 3s infinite;
+}
+
+.star-wars-2e input[type="checkbox"]#fpInEffect:checked::after,
+.star-wars-1e input[type="checkbox"]#fpInEffect:checked::after,
+.star-wars-2e input[type="checkbox"]#fatepoint:checked::after,
+.star-wars-1e input[type="checkbox"]#fatepoint:checked::after {
+content: "";
+display: block;
+width: 6px;
+height: 11px;
+border: solid black;
+border-width: 0 3px 3px 0;
+transform: rotate(41deg);
+margin: 0px 0 0 4px;
+}
+
+.star-wars-2e input[type="checkbox"]#fpInEffect:checked::before,
+.star-wars-1e input[type="checkbox"]#fpInEffect:checked::before,
+.star-wars-2e input[type="checkbox"]#fatepoint:checked::before,
+.star-wars-1e input[type="checkbox"]#fatepoint:checked::before {
+content: "";
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 3px;
+height: 3px;
+border-radius: 50%;
+animation-delay: 0.25s
+}
+
+.star-wars-2e input[type="checkbox"]#fpInEffect:checked::before,
+.star-wars-2e input[type="checkbox"]#fatepoint:checked::before {
+background-color: white;
+animation: sparkle-2e 1.5s infinite;
+}
+
+.star-wars-1e input[type="checkbox"]#fpInEffect:checked::before,
+.star-wars-1e input[type="checkbox"]#fatepoint:checked::before {
+background-color: cyan;
+animation: sparkle-1e 1.5s infinite;
+}
+
+/* To-do:
+- 2nd edition Combat Tab
+- Special Abilities
+- The force
+- Biography boxes
+- Cybernetics
+- Ships
+- Vehicles
+
+*/

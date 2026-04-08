@@ -1,0 +1,17 @@
+<div class="background-image">
+    <header class="sheet-header flex-group-left">
+        <div>
+            <div class="flexrow">
+                <img class="sw-logo" src="modules/starwarsd6-essentialcompanion-od6s/templates/logo-1e.webp" width="150">
+                <h1 class="charname">
+                    <input title="{{localize 'OD6S.CHAR_NAME'}}" name="name" type="text" value="{{actor.name}}"
+                           placeholder="{{localize 'OD6S.CHAR_NAME'}}" data-dtype="String"/>
+                </h1>
+            </div>
+            {{> (getHeaderFormTemplate actor.type)}}
+        </div>
+        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="200" width="200"
+             alt="{{localize 'OD6S.ALT_ACTOR_IMAGE'}}"/>
+    </header>
+    {{> (getBodyTemplate actor.type)}}
+</div>

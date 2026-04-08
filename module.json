@@ -29,7 +29,7 @@
 		{ "lang": "en", "name": "English", "path": "lang/en.json" }
 	],
 	"esmodules": [ "src/starwarsd6.mjs" ],
-	"styles": [ "css/styles.css" ],
+	"styles": [ "css/styles.css", "css/star-wars.css" ],
 	"packs": [
 		{
 			"name": "module-reupskills",
@@ -97,13 +97,6 @@
 			"name": "module-d6htemplates",
 			"label": "Star Wars D6 Character Templates",
 			"path": "./packs/d6htemplates",
-			"type": "Item",
-			"system": "od6s"
-		},
-		{
-			"name": "module-d6sptemplates",
-			"label": "Star Wars D6 Species Templates (In-Progress)",
-			"path": "./packs/d6sptemplates",
 			"type": "Item",
 			"system": "od6s"
 		},
