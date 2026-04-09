@@ -1,5 +1,3 @@
-2026/04/07-20:14:49.011 3638 Delete type=3 #1
-2026/04/07-20:14:49.015 138d4 Level-0 table #5: started
-2026/04/07-20:14:49.019 138d4 Level-0 table #5: 97274 bytes OK
-2026/04/07-20:14:49.023 138d4 Delete type=0 #3
-2026/04/07-20:14:49.023 138d4 Manual compaction at level-0 from '!items!01OzfwznRiFSjCj0' @ 72057594037927935 : 1 .. '!items.effects!zPZLdHqQxqbF60MN.4utMTp8z0ERxRaHj' @ 0 : 0; will stop at (end)
+2026/04/08-13:56:34.084 f44c Recovering log #4
+2026/04/08-13:56:34.098 f44c Delete type=0 #4
+2026/04/08-13:56:34.098 f44c Delete type=3 #2
